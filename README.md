@@ -4,6 +4,17 @@
 ### Description
 This project involves the development of a multiplayer interpretation of the game Reversi (Othello). It features a wide range of algorithms that implement various opponents in the game, providing an engaging and challenging experience for players. Players can compete against each other or against AI-controlled bots, making for a versatile gaming experience.
 
+![image](https://github.com/user-attachments/assets/bf587d36-bf04-407b-be7e-07418b983085)
+
+![image](https://github.com/user-attachments/assets/93b9c63d-ea53-4d74-9175-ea78ff7e1939)
+
+![image](https://github.com/user-attachments/assets/afe79af2-61e4-4896-86cd-a3766ca77f45)
+
+![image](https://github.com/user-attachments/assets/f3d0723d-8795-4c6d-9355-5fbf0a2eb8d6)
+
+
+
+
 ### Getting Started
 To run the application, follow these steps:
 
