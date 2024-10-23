@@ -51,6 +51,9 @@ To play on your own (graphical mode), ensure that in step 2 you set the `player`
 1. Run `clientGui` in the `UI` module (package `guiClient`).
 2. Follow the intuitive and user-friendly graphical interface to start playing.
 
+### Multiplayer Mode
+The game includes a multiplayer mode that utilizes a graphical interface. Players can connect to each other via sockets using TCP, allowing for real-time gameplay. This feature enhances the gaming experience by providing a smooth and interactive environment where players can easily join or create rooms to compete against one another.
+
 ### Technologies Used
 - Java for backend development.
 - Socket programming for client-server communication.
