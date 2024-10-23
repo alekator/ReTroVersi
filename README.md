@@ -1,34 +1,50 @@
 # reversi-deeplay
-Reversi/Othello Game
+## Reversi/Othello Game
 
-Для запуска приложения выполните следующие действия:
-1. В файле file.properties в модулe server укажите необходимый вам порт( по умолчанию 6070).
-2. В файле file.properties в модуле client и UI укажите необходимые вам:
-   ip адрес в поле host ( по умолчанию localhost)
-   serverPort( по умолчанию 6070)
-   player( значение bot, если за вас будет играть bot; human, если будете играть самостоятельно)
-4. В файле file.properties в модуле botfarm укажите необходимый вам port( по умолчанию 6071).
-5. Запустите Server.java в модуле server.
-   
-чтобы запустить бота, проверьте, что в пункте 2 в поле player вы указали значение bot и выполните следующие действия:
+### Description
+This project involves the development of a multiplayer interpretation of the game Reversi (Othello). It features a wide range of algorithms that implement various opponents in the game, providing an engaging and challenging experience for players. Players can compete against each other or against AI-controlled bots, making for a versatile gaming experience.
 
-1. В классе GetResponsesMethodsBot в методе commandWhereICanGoGameBot замените название бота на необходимого( как черный, так и белый цвета).
-2. Запустите класс client, введите имя игрока бота( не обязательно такое же, как и название бота. имя может быть любым из латинских символов).
-3. Бот автоматически подключится к серверу и создаст комнату.
-4. Если вы хотите подлкючиться в другую комнату, введите команду CONNECCTTOROOM *roomId*, где roomId - комната, к которой вы хотите подключиться(с вами, или с другим ботом).
-5. Как только в комнате окажутся двое игроков - игра начнется автоматически.
+### Getting Started
+To run the application, follow these steps:
 
-Чтобы играть самостоятельно( консольный режим), проверьте, что в пункте 2 в поле player вы указали значение human и выполните следующие действия:
-1. Запустите client.
-2. Введите команду REGISTRATION *nickname*.
-3. Введите команду AUTHORIZATION *nickname*.
-4.1. Если вы хотите подлкючиться в другую комнату, введите команду CONNECCTTOROOM *roomId*, где roomId - комната, к которой вы хотите подключиться( с вами, или с другим ботом).
-4.2. Если вы хотите создать комнату, то введите команду CREATEROOM.
-5. Как только в комнате окажутся двое игроков - игра начнется автоматически.
+1. In the `file.properties` file in the `server` module, specify the desired port (default is 6070).
+2. In the `file.properties` file in the `client` and `UI` modules, specify the necessary:
+   - IP address in the `host` field (default is `localhost`)
+   - `serverPort` (default is 6070)
+   - `player` (set to `bot` if you want to play against a bot; set to `human` if you want to play yourself).
+3. In the `file.properties` file in the `botfarm` module, specify the desired port (default is 6071).
+4. Run `Server.java` in the `server` module.
 
-Чтобы играть самостоятельно( графический режим), проверьте, что в пункте 2 в поле player вы указали значение human и выполните следующие действия:   
-1. Запустите clientGui в модуле UI ( пакет guiClient)
-2. Следуйте интуитивно-понятному и пользователь-дружелюбному графическому интерфейсу, чтобы начать играть
+### Playing with a Bot
+To launch the bot, ensure that in step 2 you set the `player` field to `bot` and follow these steps:
 
+1. In the `GetResponsesMethodsBot` class, replace the bot's name in the `commandWhereICanGoGameBot` method with the desired name (for both black and white).
+2. Run the `client` class and enter the bot player's name (it doesn't have to be the same as the bot's name; it can be any combination of Latin characters).
+3. The bot will automatically connect to the server and create a room.
+4. If you want to connect to another room, enter the command `CONNECCTTOROOM *roomId*`, where `roomId` is the room you want to connect to (with you or another bot).
+5. Once two players are in the room, the game will start automatically.
 
+### Playing Solo (Console Mode)
+To play on your own (console mode), ensure that in step 2 you set the `player` field to `human` and follow these steps:
 
+1. Run the `client`.
+2. Enter the command `REGISTRATION *nickname*`.
+3. Enter the command `AUTHORIZATION *nickname*`.
+4.1. If you want to connect to another room, enter the command `CONNECCTTOROOM *roomId*`, where `roomId` is the room you want to connect to (with you or another bot).
+4.2. If you want to create a room, enter the command `CREATEROOM`.
+5. Once two players are in the room, the game will start automatically.
+
+### Playing Solo (Graphical Mode)
+To play on your own (graphical mode), ensure that in step 2 you set the `player` field to `human` and follow these steps:
+
+1. Run `clientGui` in the `UI` module (package `guiClient`).
+2. Follow the intuitive and user-friendly graphical interface to start playing.
+
+### Technologies Used
+- Java for backend development.
+- Socket programming for client-server communication.
+- Algorithms for AI opponents.
+- User-friendly interface in both console and graphical modes.
+
+### Acknowledgments
+- Thank you to all contributors and the open-source community for the resources that helped in the development of this project.
