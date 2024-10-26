@@ -14,7 +14,6 @@ This project involves the development of a multiplayer interpretation of the gam
 
 
 
-
 ### Getting Started
 To run the application, follow these steps:
 
