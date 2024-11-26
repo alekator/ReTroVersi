@@ -58,6 +58,3 @@ The game includes a multiplayer mode that utilizes a graphical interface. Player
 - Socket programming for client-server communication.
 - Algorithms for AI opponents.
 - User-friendly interface in both console and graphical modes.
-
-### Acknowledgments
-- Thank you to all contributors and the open-source community for the resources that helped in the development of this project.
